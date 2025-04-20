@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="shortcut icon" href="./images/weather.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand d-flex" href="#">
+                <div class="img me-3">
+                  <img src="./images/logo.png" alt="weather">
+                </div>
+                  <div class="content">
+                      <h1 class="title ">Weather</h1>
+                      <span class="small-title">tagline goes here</small>
+               </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center mt-4">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">News</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Live cameras</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Photos</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Contact</a>
+                  </li>  
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+    </nav>
+    <main>
+        <section class="header py-5">
+            <div class="container overflow-hidden">
+              <form id="formData">
+                <div class="btns position-relative">
+                  <input type="text" placeholder="Find your location..." id="searchInput">
+                <button id="btn" class="btn submit">Find</button>
+                </div>
+              </form>
+          <div id="contain" class="contain mt-4 rounded d-none">
+            <h1 id="title" class="text-white m-auto"></h1>
+          </div>
+
+              <div class="d-flex justify-content-center align-items-center min-vh-100  d-none" id="loader">
+                <span class="loader"></span>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 g-2">
+             <div id="dayNow" class="col">
+             
+              </div>
+             <div id="dataDays1" class="col ">
+              </div>
+              <div id="dataDays2" class="col ">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container py-5">
+        <div class=" row  d-flex  align-items-center justify-content-between ">
+            <div class="btns position-relative col-md-8 col-sm-12">
+              <input class="px-4 py-3"  type="text" placeholder="Enter Your Email to subscripe..." id="search">
+            <button id="btn" class="btn submit">Find</button>
+            </div>
+          <div class="icon d-flex justify-content-center align-items-center gap-2 col-md-4 col-sm mt-2">
+            <a href="#"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fs-5"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g fs-5"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest fs-5"></i></a>
+            
+          </div>
+          <p class="text-white mt-3"> Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

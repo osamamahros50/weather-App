@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*,body{
+    font-family: "Roboto", sans-serif;
+}
+.navbar{
+    background-color: #1E202B;
+    padding: 50px 0;
+}
+.navbar .navbar-nav .active{
+    border: 2px solid  #009ad8 !important;
+    color: #009ad8 !important;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.navbar .navbar-nav .nav-item a{
+    padding: 5px 25px;
+    color: #fff;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+.navbar .navbar-nav .nav-item a:hover:not(.active){
+    border: 2px solid  #009ad8 ;
+    color: #009ad8 !important;
+    border-radius: 50px;
+}
+.navbar .title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff !important;
+    margin-bottom: 1px;
+}
+nav.navbar .navbar-toggler{
+    box-shadow: none !important;
+    border: none !important;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 25px;
+    border: 2px solid transparent !important;
+    transition: .3s;
+    border-radius: 50px;
+}
+@media (max-width:992px) {
+    nav.navbar .navbar-toggler:hover{
+        border: 2px solid #009ad8 !important;
+        color: #009ad8 !important;
+    }
+    .navbar-collapse{
+        background-color: #262936;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .navbar-collapse .nav-item a ,.navbar .navbar-nav .active {
+        border: none !important; 
+        border-bottom: 1px solid #323544 !important;
+        padding: 10px !important;
+    }
+    .navbar-collapse .nav-item a:hover {
+        background-color: transparent; 
+        color: #009ad8; 
+}
+#title{
+    font-size: 20px;
+    text-align: center;
+}
+}
+ .small-title{
+    font-size: 14px;
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ input{
+    background-color: #1e202b;
+    border-radius: 50px;
+    width: 100%;
+    padding: 20px 50px 20px  20px;
+    border: none;
+    outline: none;
+    position: relative;
+    color: #fff;
+}
+ .submit{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border: none;
+    background: #009ad8;
+    border-radius: 30px;
+    color: white;
+}
+.submit:hover{
+    background: #009ad8;
+    color: #fff;
+
+}
+.card{
+    height: 100%;
+}
+.card-1 , .card-3{
+    background-color:#323544;
+}
+.card-1 .card-header ,.card-2 .card-header ,.card-3 .card-header{
+    background-color: #2d303d;
+    color: #bfc1c8;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-2{
+    background-color: #262936;
+}
+.card-2 .card-header{
+    background-color: #222530;
+}
+.location{
+    color: #bfc1c8;
+    font-weight: 500;
+}
+.minum{
+    font-size: 90px;
+}
+.status{
+    color: #009ad8;
+}
+.wind-color{
+    color: #bfc1c8;
+}
+ .minum-1{
+    font-size: 24px;
+}
+ .minum-2{
+    color: #bfc1c8;
+}
+footer{
+    background-color:#323544; 
+}
+footer .submit{
+    right: 15px;
+}
+.icon a{
+    background-color: #1E202B;
+    /* padding: 10px ; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #009ad8;
+    text-decoration: none;
+}
+.icon a:hover{
+    background-color: #009ad8;
+    color: #fff;
+}
+footer p{
+    font-weight: 300;
+    font-size: 12px;
+    color: #bfc1c8;
+}
+.loader {
+    width: 180px;
+    height: 140px;
+    display: block;
+    margin: 0 auto 20px;
+    background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 15px at 15px 15px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
+    background-size: 50px 50px, 100px 75px, 50px 50px, 30px 32px, 136px 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 30px, 30px 0px, 113px 29px, 147px 50px, 23px 60px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .loader::after {
+    content: '';  
+    position: absolute;
+    left: 2px;
+    top: 65px;
+    width: 2px;
+    height: 6px;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: animloader 0.6s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 25px 0 white, 50px 0 white, 75px 0 white, 100px 0 white, 125px 0 white, 150px 0 white, 25px 0 white, 50px 0 white, 75px 0 white, 100px 0 white, 125px 0 white, 150px 0 white;
+    }
+    50% {
+      box-shadow: 25px 20px white, 50px 60px rgba(255, 255, 255, 0), 75px 30px rgba(255, 255, 255, 0), 100px 70px rgba(255, 255, 255, 0), 125px 40px white, 150px 60px rgba(255, 255, 255, 0), 25px 20px white, 50px 30px white, 75px 10px white, 100px 30px white, 125px 30px rgba(255, 255, 255, 0), 150px 30px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 25px 60px rgba(255, 255, 255, 0), 50px 60px rgba(255, 255, 255, 0), 75px 50px rgba(255, 255, 255, 0), 100px 70px rgba(255, 255, 255, 0), 125px 70px rgba(255, 255, 255, 0), 150px 60px rgba(255, 255, 255, 0), 25px 80px rgba(255, 255, 255, 0), 50px 80px rgba(255, 255, 255, 0), 75px 70px rgba(255, 255, 255, 0), 100px 60px rgba(255, 255, 255, 0), 125px 30px rgba(255, 255, 255, 0), 150px 30px rgba(255, 255, 255, 0);
+    }
+  }
+
+/* From Uiverse.io by elijahgummer */ 
+.contain{
+    background-color: #1e202b;
+    width: 80%;
+    margin: auto;
+    padding: 20px 10px;
+
+}
+#title {
+    position: relative;
+    width: fit-content;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, #00b09b 10%, #96c93d 20%);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
